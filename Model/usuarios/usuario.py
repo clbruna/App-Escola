@@ -1,4 +1,5 @@
-class User:
+from abc import ABC
+class User(ABC):
     def __init__(self, id: str, nome: str, senha: str, nivel: str):
 
         self.__id = id
@@ -31,4 +32,3 @@ class User:
     @getSenha.setter
     def setSenha(self, senha):
         self.__senha = senha
-
