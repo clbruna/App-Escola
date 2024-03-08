@@ -1,4 +1,4 @@
-from usuario import User
+from Model.usuarios.usuario import User
 
 class Professor(User):
     def __init__(self, id: str, nome: str, senha: str, nivel: str, contrato: str):

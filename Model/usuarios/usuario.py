@@ -32,3 +32,5 @@ class User(ABC):
     @getSenha.setter
     def setSenha(self, senha):
         self.__senha = senha
+
+
