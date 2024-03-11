@@ -1,0 +1,12 @@
+attrs
+Faker
+iniconfig
+packaging
+pluggy
+py
+pyparsing
+pytest
+python-dateutil
+six
+text-unidecode
+toml
