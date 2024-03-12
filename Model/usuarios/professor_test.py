@@ -2,7 +2,7 @@ from Model.usuarios.professor import Professor
 from faker import Faker
 import random
 import re
-
+#modificação
 def geradorSenhas():
     n1= str(random.randint(0,9))
     n2 = str(random.randint(0, 9))
