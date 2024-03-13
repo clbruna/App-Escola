@@ -28,14 +28,14 @@ from datetime import date
 # t_7d=Turma("2","7","D","2024","MANHÃ")
 # t_5a=Turma("3","5","A","2024","TARDE")
 
-listaAulas=list()
-listaTurmas=list()
-listaProf=list()
-listaMaterias=list()
+listaAulas = list()
+listaTurmas = list()
+listaProf = list()
+listaMaterias = list()
 idMateria = 1
 idProfessor = 1
-idTurma=1
-idAula=1
+idTurma = 1
+idAula = 1
 #Simulando a tela de cadastro de aulas pelo adm
 while True:
 
