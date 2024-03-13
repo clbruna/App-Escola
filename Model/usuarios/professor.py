@@ -8,7 +8,6 @@ class Professor(User):
         self.__aulas = []
 
 
-
     @property
     def contrato(self):
         return self.__contrato
@@ -17,9 +16,18 @@ class Professor(User):
     def materias(self):
         return self.__materias
 
+
+    @materias.setter
+    def materias(self, materia):
+        self.__materias.append(materia)
+
     @property
     def aulas(self):
         return self.__aulas
+
+    @aulas.setter
+    def aulas(self, aula):
+        self.__aulas.append(aula)
 
 
 

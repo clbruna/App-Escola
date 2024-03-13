@@ -21,7 +21,7 @@ class Aula:
     @property
     def idProfessor(self):
         return self.__idProfessor
-    
+
     @property
     def idMateria(self):
         return self.__idMateia

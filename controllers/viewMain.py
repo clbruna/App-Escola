@@ -28,11 +28,47 @@ t_4a=Turma("1","4","A","2024","MANHÃ")
 t_7d=Turma("2","7","D","2024","MANHÃ")
 t_5a=Turma("3","5","A","2024","TARDE")
 
-ano=int(input("ano: "))
-mes=int(input("mês: "))
-dia=int(input("dia: "))
+listaAulas=list()
+#Simulando a tela de cadastro de aulas pelo adm
+while True:
 
-dataAula=date(2024, 3, 15)
+    print("""
+    Sistema Teste
+    
+    digite 1 para cadastrar Materia
+    
+    digite 2 para cadastrar professor
+    
+    digite 3 para cadastrar Turma
+    
+    digite 4 para cadastrar Aula
+    
+    digite 5 para gerar relatorios
+    
+    """)
 
-if validar_data(dataAula):
-    a1=Aula("1","2","1","1",dataAula)
+    entrada = input("resposta: ")
+
+    match entrada:
+        case "1":
+            nome = input("Digite o nome da materia: ")
+            materia = Materia(None, nome)
+            print("materia Cadastrada com sucesso!")
+
+        case "2":
+
+
+
+            profrssor = Professor(None)
+
+    ano = int(input("ano: "))
+    mes = int(input("mês: "))
+    dia = int(input("dia: "))
+    dataAula = date(ano, mes, dia)
+
+    if validar_data(dataAula):
+        listaAulas.append(Aula("1","1","1","1","1",dataAula))
+
+
+    else:
+        print("Você precisa digitar uma data valida")
