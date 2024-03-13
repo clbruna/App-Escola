@@ -1,6 +1,6 @@
 from abc import ABC
 class User(ABC):
-    def __init__(self, id: str, nome: str, senha: str, nivel: str):
+    def __init__(self, id: int, nome: str, senha: str, nivel: str):
 
         self.__id = id
         self.__nome = nome

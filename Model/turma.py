@@ -1,5 +1,5 @@
 class Turma:
-    def __init__(self, id, serie, identificador, anoLetivo, periodo):
+    def __init__(self, id:int, serie, identificador, anoLetivo, periodo):
         self.__id = id
         self.__serie = serie
         self.__indentficador = identificador

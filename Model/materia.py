@@ -1,5 +1,5 @@
 class Materia:
-    def __init__(self, id: str, nome: str):
+    def __init__(self, id: int, nome: str):
         self.__id = id
         self.__nome = nome
         self.__professores = []
