@@ -5,6 +5,8 @@ class Professor(User):
         super().__init__(id, nome, senha, nivel)
         self.__contrato = contrato
         self.__materias = []
+        self.__aulas = []
+
 
 
     @property
@@ -14,3 +16,10 @@ class Professor(User):
     @property
     def materias(self):
         return self.__materias
+
+    @property
+    def aulas(self):
+        return self.__aulas
+
+
+
