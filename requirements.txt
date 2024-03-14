@@ -11,3 +11,6 @@ six
 text-unidecode
 toml
 reportlab
+flet
+holidays
+reportlab
