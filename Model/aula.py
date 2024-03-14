@@ -1,8 +1,11 @@
+from Model.materia import Materia
+from Model.turma import Turma
+
 class Aula:
-    def __init__(self, idAula, ident_Turma, idProfessor, idMateia, numeroAula, data, status=False):
+    def __init__(self, idAula, idTurma:Turma, idProfessor, idMateia:Materia, numeroAula, data, status=False):
 
         self.__idAula = idAula
-        self.__identTurma = ident_Turma
+        self.__idTurma = idTurma
         self.__idProfessor = idProfessor
         self.__idMateia = idMateia
         self.__numeroAula = numeroAula
@@ -16,7 +19,7 @@ class Aula:
 
     @property
     def idTurma(self):
-        return self.__identTurma
+        return self.__idTurma
 
     @property
     def idProfessor(self):
@@ -39,11 +42,11 @@ class Aula:
         return self.__status
 
     @idTurma.setter
-    def setIdturma(self,idTurma):
+    def setIdturma(self, idTurma):
         self.idTurma = idTurma
 
     @idProfessor.setter
-    def setIdProfessor(self,idProfessor):
+    def setIdProfessor(self, idProfessor):
         self.__idProfessor = idProfessor
 
     @idMateria.setter

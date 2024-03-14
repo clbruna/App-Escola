@@ -8,21 +8,21 @@ class Turma:
 
 
     @property
-    def getId(self):
+    def id(self):
         return self.__id
 
     @property
-    def getSerie(self):
+    def serie(self):
         return self.__serie
 
     @property
-    def getIdentificador(self):
+    def identificador(self):
         return self.__indentficador
 
     @property
-    def getAnoLetivo(self):
+    def anoLetivo(self):
         return self.__anoLetivo
 
     @property
-    def getPeriodo(self):
+    def periodo(self):
         return self.__periodo

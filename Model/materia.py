@@ -6,11 +6,11 @@ class Materia:
 
 
     @property
-    def getMateria(self):
+    def nome(self):
         return self.__nome
 
     @property
-    def getId(self):
+    def id(self):
         return self.__id
 
     @property
@@ -19,5 +19,3 @@ class Materia:
 
     def addProfessor(self, professor):
         self.__professores.append(professor)
-
-#apenas um teste
