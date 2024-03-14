@@ -17,5 +17,7 @@ class Materia:
     def professores(self):
         return self.__professores
 
-    def addProfessor(self,professor):
+    def addProfessor(self, professor):
         self.__professores.append(professor)
+
+#apenas um teste
