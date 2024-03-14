@@ -12,3 +12,8 @@ text-unidecode
 toml
 reportlab
 flet
+<<<<<<< HEAD
+=======
+holidays
+reportlab
+>>>>>>> 3ba5a9dcb7eaadb57195531111f7df8ab1197a26

@@ -1,11 +1,14 @@
 from flet import *
 
 from Views.viewLogin import ViewLogin
+from Views.viewHome import ViewHome
 
 
 def main(page:Page):
 
     telaLogin = ViewLogin()
+    barHome = ViewHome()
+    telaLogin.btn_Enter.on_click = lambda e: page.go("/home")
 
     def changeRoutes(route):
 
@@ -17,6 +20,16 @@ def main(page:Page):
                 controls=[telaLogin]
             )
         )
+
+        if page.route == "/home":
+            page.views.append(
+                View(
+                    route="/home",
+                    controls=[
+                        barHome
+                    ]
+                )
+            )
 
         page.update()
 
