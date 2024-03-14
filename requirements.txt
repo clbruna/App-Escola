@@ -11,3 +11,4 @@ six
 text-unidecode
 toml
 reportlab
+flet
